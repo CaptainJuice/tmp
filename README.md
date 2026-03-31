@@ -204,7 +204,7 @@ the $5$ runs.
 **Caption**
 
 **Pairwise concentration across all $\binom{N}{2}$ point pairs**
-($N\!=\!300$, $\psi\!=\!64$, single linkage, $R\!=\!5$ independent runs).
+($N=300$, $\psi=64$, single linkage, $R=5$ independent runs).
 Let $\hat{d}_{ij}^{(r)}$ denote the estimated distance between
 points $i$ and $j$ in the $r$-th independent run
 ($r = 1,\dots,R$).  Define the per-pair mean
@@ -220,19 +220,20 @@ All statistics below are averaged over the
 $\binom{N}{2}$ pairs.
 **Top row (Mean Pairwise CV):**
 $\overline{\mathrm{CV}}(t)
-= \binom{N}{2}^{-1}\!\sum_{i<j}\mathrm{CV}_{ij}$,
+= \binom{N}{2}^{-1}\sum_{i<j}\mathrm{CV}_{ij}$,
 the mean coefficient of variation as a function of the number of
 trees $t$.
 **Middle row (Mean Pairwise SD):**
 $\bar{\sigma}(t)
-= \binom{N}{2}^{-1}\!\sum_{i<j}\sigma_{ij}$,
+= \binom{N}{2}^{-1}\sum_{i<j}\sigma_{ij}$,
 the mean raw standard deviation (unnormalised) across all pairs.
 **Bottom row (Mean Pairwise Max Gap):**
 $\overline{\mathrm{MG}}(t)
-= \binom{N}{2}^{-1}\!\sum_{i<j}\mathrm{MG}_{ij}$,
+= \binom{N}{2}^{-1}\sum_{i<j}\mathrm{MG}_{ij}$,
 the mean of the per-pair range (maximum minus minimum) over $R$
 runs, measuring the worst-case single-run deviation for a typical
 pair.
+
 
 ## Figure 16 (fig:concentration)
 
