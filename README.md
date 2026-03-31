@@ -210,8 +210,8 @@ points $i$ and $j$ in the $r$-th independent run
 ($r = 1,\dots,R$).  Define the per-pair mean
 $\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}$,
 standard deviation
-$\sigma_{ij} = \bigl[\frac{1}{R-1}\sum_{r=1}^{R}
-(\hat{d}_{ij}^{(r)} - \mu_{ij})^{2}\bigr]^{1/2}$,
+$\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}
+(\hat{d}_{ij}^{(r)} - \mu_{ij})^{2}}$,
 coefficient of variation
 $\mathrm{CV}_{ij} = \sigma_{ij}\,/\,\mu_{ij}$,
 and max gap
