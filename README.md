@@ -10,10 +10,7 @@ and build a single AHC tree via random subsampling with subsample size $`\psi = 
 and single linkage. Each leaf represents one of the 32 randomly subsampled data points.
 Leaf nodes are coloured by their *geodesic position*: arc length for Helix;
 first intrinsic coordinate for S-Curve and Swiss Roll; azimuthal angle for Sphere,
-normalised to $`[0,1]`$ and mapped to a viridis colour scale. For the Helix and S-Curve, the dendrograms show that geodesically nearby points (similar colours) are merged at low heights, while
-geodesically distant points (contrasting colours) are only joined at higher levels.
-The Sphere and Swiss Roll show broader colour mixing at higher merge levels, but local
-geodesic clusters are still clearly visible within subtrees.
+normalised to $`[0,1]`$ and mapped to a viridis colour scale. 
 
 ## Figure 2 (fig:cophenetic_scatter)
 
@@ -28,9 +25,7 @@ we compute the **cophenetic distance (the merge height at which the two points f
 in the dendrogram)** and the true geodesic distance. Each dot is one pair; the red line
 is a linear regression fit, with Pearson $`r`$ annotated. Pearson $`r`$ measures *linear* association only. A moderate $`r`$
 does not imply failure to preserve the geodesic *rank ordering*. We report Pearson $`r`$ as a
-conservative guarantee. All four manifolds exhibit clear positive correlation. Single-tree cophenetic estimates are more reliable
-for local neighbours than for distant pairs. This increasing variance at large
-distances motivates the ensemble averaging strategy in Figure 4.
+conservative guarantee. 
 
 ## Figure 3 (fig:cophenetic_distribution)
 
