@@ -203,7 +203,7 @@ the $5$ runs.
 
 **Caption**
 
-**Pairwise concentration across all $\binom{N}{2}$ point pairs}
+**Pairwise concentration across all $\binom{N}{2}$ point pairs**
 ($N\ =\ 300$, $\psi\ =\ 64$, single linkage, $R\ =\ 5$ independent runs).
 Let $\hat{d}_{ij}^{(r)}$ denote the estimated distance between
 points $i$ and $j$ in the $r$-th independent run
