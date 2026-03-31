@@ -1,10 +1,10 @@
 <!-- # Reviewer Response: Direct Visualization and Analysis of AGD Tree Structures
 
-This Markdown mirrors the content of `tree_visualization_response.tex` and uses figures copied into `markdown_figures/`. -->
+This Markdown mirrors the content of `tree_visualization_response.tex` and uses figures copied into `figs/`. -->
 
 ## Figure 1 (fig:dendrograms)
 
-![fig:dendrograms](markdown figures/fig1b_dendrograms_combined.png)
+![fig:dendrograms](figs/fig1b_dendrograms_combined.png)
 
 **Caption**
 
@@ -22,7 +22,7 @@ tree preserves geodesic locality even in a single trial.
 
 ## Figure 2 (fig:cophenetic_scatter)
 
-![fig:cophenetic_scatter](markdown_figures/fig2_cophenetic_scatter_combined.png)
+![fig:cophenetic_scatter](figs/fig2_cophenetic_scatter_combined.png)
 
 **Caption**
 
@@ -39,7 +39,7 @@ distances motivates the ensemble averaging strategy in Figure 4.
 
 ## Figure 3 (fig:cophenetic_distribution)
 
-![fig:cophenetic_distribution](markdown_figures/fig3_forest_statistics.png)
+![fig:cophenetic_distribution](figs/fig3_forest_statistics.png)
 
 **Caption**
 
@@ -51,7 +51,7 @@ distribution of Pearson $r$ values across trials; the dashed red line marks the 
 
 ## Figure 4 (fig:aggregation)
 
-![fig:aggregation](markdown_figures/fig4_cophenetic_correlation.png)
+![fig:aggregation](figs/fig4_cophenetic_correlation.png)
 
 **Caption**
 
@@ -65,7 +65,7 @@ subsampling.
 
 ## Figure 5 (fig:heatmap_helix)
 
-![fig:heatmap_helix](markdown_figures/fig6_heatmaps_helix.png)
+![fig:heatmap_helix](figs/fig6_heatmaps_helix.png)
 
 **Caption**
 
@@ -78,7 +78,7 @@ Left: ground-truth geodesic distance; Centre: AGD ($r\!=\!0.848$); Right: AGD-SS
 
 ## Figure 6 (fig:heatmap_scurve)
 
-![fig:heatmap_scurve](markdown_figures/fig6_heatmaps_scurve.png)
+![fig:heatmap_scurve](figs/fig6_heatmaps_scurve.png)
 
 **Caption**
 
@@ -90,7 +90,7 @@ shortest paths ($k\!=\!10$). Matrices are sorted by the first intrinsic coordina
 
 ## Figure 7 (fig:heatmap_sphere)
 
-![fig:heatmap_sphere](markdown_figures/fig6_heatmaps_sphere.png)
+![fig:heatmap_sphere](figs/fig6_heatmaps_sphere.png)
 
 **Caption**
 
@@ -101,7 +101,7 @@ Matrices are sorted by azimuthal angle. Left: ground-truth geodesic distance; Ce
 
 ## Figure 8 (fig:heatmap_swiss_roll)
 
-![fig:heatmap_swiss_roll](markdown_figures/fig6_heatmaps_swiss_roll.png)
+![fig:heatmap_swiss_roll](figs/fig6_heatmaps_swiss_roll.png)
 
 **Caption**
 
@@ -115,7 +115,7 @@ are geodesically distant.
 
 ## Figure 9 (fig:am_aggregation)
 
-![fig:am_aggregation](markdown_figures/fig_am_aggregation.png)
+![fig:am_aggregation](figs/fig_am_aggregation.png)
 
 **Caption**
 
@@ -127,7 +127,7 @@ On **H<sup>2**</sup>, AGD-SS outperforms AGD consistently over different number 
 
 ## Figure 10 (fig:am_heatmap_poincare)
 
-![fig:am_heatmap_poincare](markdown_figures/fig_am_heatmaps_poincare.png)
+![fig:am_heatmap_poincare](figs/fig_am_heatmaps_poincare.png)
 
 **Caption**
 
@@ -139,7 +139,7 @@ Right: **AGD-SS** ($r\!=\!0.773$).
 
 ## Figure 11 (fig:am_heatmap_ball)
 
-![fig:am_heatmap_ball](markdown_figures/fig_am_heatmaps_ball.png)
+![fig:am_heatmap_ball](figs/fig_am_heatmaps_ball.png)
 
 **Caption**
 
@@ -151,7 +151,7 @@ Right: **AGD-SS** ($r\!=\!0.722$).
 
 ## Figure 12 (fig:hyperbolic_precision)
 
-![fig:hyperbolic_precision](markdown_figures/fig_hyperbolic_precision_h3.png)
+![fig:hyperbolic_precision](figs/fig_hyperbolic_precision_h3.png)
 
 **Caption**
 
@@ -167,7 +167,7 @@ difficulty with hyperbolic geometry.
 
 ## Figure 13 (fig:manifold_local_correlation)
 
-![fig:manifold_local_correlation](markdown_figures/fig_manifold_local_correlation.png)
+![fig:manifold_local_correlation](figs/fig_manifold_local_correlation.png)
 
 **Caption**
 
@@ -186,7 +186,7 @@ step used by Isomap. In Sphere and Swiss Roll, AGD-SS outperforms other methods.
 
 ## Figure 14 (fig:pointwise_concentration)
 
-![fig:pointwise_concentration](markdown_figures/fig_pointwise_concentration.png)
+![fig:pointwise_concentration](figs/fig_pointwise_concentration.png)
 
 **Caption**
 
@@ -201,7 +201,7 @@ the $5$ runs.
 
 ## Figure 15 (fig:pairwise_concentration)
 
-![fig:pairwise_concentration](markdown_figures/fig_pairwise_concentration.png)
+![fig:pairwise_concentration](figs/fig_pairwise_concentration.png)
 
 **Caption**
 
@@ -239,7 +239,7 @@ pair.
 
 ## Figure 16 (fig:concentration)
 
-![fig:concentration](markdown_figures/fig_concentration.png)
+![fig:concentration](figs/fig_concentration.png)
 
 **Caption**
 
