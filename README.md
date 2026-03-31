@@ -80,7 +80,7 @@ Left: ground-truth geodesic distance; Centre: AGD ($r\ =\ 0.848$); Right: AGD-SS
 
 **Distance matrix heatmaps for the S-Curve manifold.**
 Same protocol as Figure 5: $N\ =\ 300$, $\psi\ =\ 64$,
-t\ =\ 200$ trees, single linkage. The geodesic distance is computed via $k$-NN graph
+$t\ =\ 200$ trees, single linkage. The geodesic distance is computed via $k$-NN graph
 shortest paths ($k\ =\ 10$). Matrices are sorted by the first intrinsic coordinate. Left: ground-truth geodesic distance; Centre: AGD ($r\ =\ 0.716$); Right: AGD-SS
 ($r\ =\ 0.821$).
 
@@ -150,8 +150,7 @@ Right: **AGD-SS** ($r\ =\ 0.722$).
 
 **Caption**
 
-**Geodesic Precision on the Poincaré Ball
-(H<sup>3</sup>) at $k\ =\ 50,\,100,\,150,\,200$**
+**Geodesic Precision on the Poincaré Ball (H<sup>3</sup>) at $k\ =\ 50,\,100,\,150,\,200$**
 ($N\ =\ 1000$, noise constant $=20$).
 Here we use the same parameter setting as in the main paper (Figure 3).
 Each panel shows a different evaluation neighbourhood size $k$. **Diffusion ($m\ =\ 64$)** is the most noise-robust method when $k\ \leq\ 100$,
@@ -164,9 +163,7 @@ but its performance collapses at higher noise levels and larger $k$ values.
 
 **Caption**
 
-**Pearson correlation with true geodesic distance on
-four manifolds** ($N\ =\ 1000$, noise constant $=20$,
-noise dims $\in\ \{0,2,4,6,8,10\}$).
+**Pearson correlation with true geodesic distance on four manifolds** ($N\ =\ 1000$, noise constant $=20$, noise dims $\in\ \{0,2,4,6,8,10\}$).
 In order to align with the same setting of Figure 3 in our main paper, for each point $x_i$ we identify its $50$th--$150$th nearest
 neighbours under the true geodesic (a set $S_i$ of $101$ points)
 and compute the Pearson $r$ between the estimated and true geodesic
@@ -183,14 +180,10 @@ step used by Isomap. In Sphere and Swiss Roll, AGD-SS outperforms other methods.
 
 **Caption**
 
-**Pointwise concentration of AGD and AGD-SS for a single
-pair of points**
-($5$ independent runs).
+**Pointwise concentration of AGD and AGD-SS for a single pair of points** ($5$ independent runs).
 One pair $(i,j)$ was randomly was selected and held fixed across all runs.
-**Top row:** mean estimated pairwise distance $\pm$ one
-standard deviation (shaded).
-**Bottom row:** standard deviation of the estimate across
-$5$ runs.
+**Top row:** mean estimated pairwise distance $\pm$ one standard deviation (shaded).
+**Bottom row:** standard deviation of the estimate across $5$ runs.
 
 ## Figure 15 (fig:pairwise_concentration)
 
@@ -198,32 +191,7 @@ $5$ runs.
 
 **Caption**
 
-**Pairwise concentration across all $\binom{N}{2}$ point pairs**
-($N=300$, $\psi=64$, single linkage, $R=5$ independent runs).
-Let $\hat{d}_{ij}^{(r)}$ denote the estimated distance between
-points $i$ and $j$ in the $r$-th independent run
-($r = 1,\dots,R$).  Define the per-pair mean
-$\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}$,
-standard deviation
-$\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}(\hat{d}_{ij}^{(r)}-\mu_{ij})^{2}}$,
-coefficient of variation
-$\mathrm{CV}_{ij} = \sigma_{ij}\,/\,\mu_{ij}$,
-and max gap
-$\mathrm{MG}_{ij} = \max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}$.
-All statistics below are averaged over the
-$\binom{N}{2}$ pairs.
-**Top row (Mean Pairwise CV):**
-$\overline{\mathrm{CV}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\mathrm{CV}_{ij}$,
-the mean coefficient of variation as a function of the number of
-trees $t$.
-**Middle row (Mean Pairwise SD):**
-$\bar{\sigma}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\sigma_{ij}$,
-the mean raw standard deviation (unnormalised) across all pairs.
-**Bottom row (Mean Pairwise Max Gap):**
-$\overline{\mathrm{MG}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\mathrm{MG}_{ij}$,
-the mean of the per-pair range (maximum minus minimum) over $R$
-runs, measuring the worst-case single-run deviation for a typical
-pair.
+**Pairwise concentration across all $\binom{N}{2}$ point pairs** ($N=300$, $\psi=64$, single linkage, $R=5$ independent runs). Let $\hat{d}_{ij}^{(r)}$ denote the estimated distance between points $i$ and $j$ in the $r$-th independent run ($r = 1,\dots,R$). Define the per-pair mean $\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}$, standard deviation $\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}(\hat{d}_{ij}^{(r)}-\mu_{ij})^{2}}$, coefficient of variation $\mathrm{CV}_{ij} = \sigma_{ij}/\mu_{ij}$, and max gap $\mathrm{MG}_{ij} = \max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}$. All statistics below are averaged over the $\binom{N}{2}$ pairs. **Top row (Mean Pairwise CV):** $\overline{\mathrm{CV}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \leq j-1}\mathrm{CV}_{ij}$, the mean coefficient of variation as a function of the number of trees $t$. **Middle row (Mean Pairwise SD):** $\bar{\sigma}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \leq j-1}\sigma_{ij}$, the mean raw standard deviation (unnormalised) across all pairs. **Bottom row (Mean Pairwise Max Gap):** $\overline{\mathrm{MG}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \leq j-1}\mathrm{MG}_{ij}$, the mean of the per-pair range (maximum minus minimum) over $R$ runs, measuring the worst-case single-run deviation for a typical pair.
 
 ## Figure 16 (fig:concentration)
 
@@ -231,12 +199,8 @@ pair.
 
 **Caption**
 
-**Concentration of AGD and AGD-SS as a function of $t$
-(number of trees)**
-($5$ independent runs).
-**Top row:** Pearson $r$ with the true geodesic distance
-matrix.
+**Concentration of AGD and AGD-SS as a function of $t$ (number of trees)** ($5$ independent runs).
+**Top row:** Pearson $r$ with the true geodesic distance matrix.
 **Middle row:** Geodesic Precision at $k\ =\ 100$.
-**Bottom row:** Standard deviation across the $5$ runs
-(solid = Pearson $r$, dashed = Precision).
+**Bottom row:** Standard deviation across the $5$ runs (solid = Pearson $r$, dashed = Precision).
 Shaded bands in the top two rows denote standard deviation.
