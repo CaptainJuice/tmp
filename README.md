@@ -162,7 +162,7 @@ difficulty with hyperbolic geometry.
 
 **Caption**
 
-**Pearson correlation with true geodesic distance on four manifolds** ( $`N = 1000`$, noise constant $`= 20`$, noise dims $`\in \{0,2,4,6,8,10\}` ).
+**Pearson correlation with true geodesic distance on four manifolds** ( $`N = 1000`$, noise constant $`= 20`$, noise dims $`\in \{0,2,4,6,8,10\}`$ ).
 In order to align with the same setting of Figure 3 in our main paper, for each point $`x_i`$ we identify its $`50`$th–$`150`$th nearest
 neighbours under the true geodesic (a set $`S_i`$ of $`101`$ points)
 and compute the Pearson $`r`$ between the estimated and true geodesic
