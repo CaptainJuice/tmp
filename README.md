@@ -1,3 +1,4 @@
+**If you encounter render error of math notations, please check the README.pdf, which contains exactly the same content.**
 ## Figure 1 (fig:dendrograms)
 
  ![fig:dendrograms](figs/fig1b_dendrograms_combined.png)
