@@ -1,6 +1,4 @@
-< -- # Reviewer Response: Direct Visualization and Analysis of AGD Tree Structures
 
-This Markdown mirrors the content of `tree_visualization_response.tex` and uses figures copied into `figs/`. -->
 
 ## Figure 1 (fig:dendrograms)
 
