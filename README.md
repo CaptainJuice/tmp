@@ -13,8 +13,7 @@ first intrinsic coordinate for S-Curve and Swiss Roll; azimuthal angle for Spher
 normalised to $`[0,1]`$ and mapped to a viridis colour scale. For the Helix and S-Curve, the dendrograms show that geodesically nearby points (similar colours) are merged at low heights, while
 geodesically distant points (contrasting colours) are only joined at higher levels.
 The Sphere and Swiss Roll show broader colour mixing at higher merge levels, but local
-geodesic clusters are still clearly visible within subtrees, showing the AHC
-tree preserves geodesic locality even in a single trial.
+geodesic clusters are still clearly visible within subtrees.
 
 ## Figure 2 (fig:cophenetic_scatter)
 
