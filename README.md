@@ -203,8 +203,6 @@ the $5$ runs.
 
 **Caption**
 
-**Caption**
-
 **Pairwise concentration across all $\binom{N}{2}$ point pairs**
 ($N=300$, $\psi=64$, single linkage, $R=5$ independent runs).
 Let $\hat{d}_{ij}^{(r)}$ denote the estimated distance between
@@ -230,6 +228,7 @@ the mean raw standard deviation (unnormalised) across all pairs.
 $\overline{\mathrm{MG}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\mathrm{MG}_{ij}$,
 the mean of the per-pair range (maximum minus minimum) over $R$
 runs, measuring the worst-case single-run deviation for a typical
+pair.suring the worst-case single-run deviation for a typical
 pair.
 
 
