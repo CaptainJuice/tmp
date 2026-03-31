@@ -80,7 +80,7 @@ Left: ground-truth geodesic distance; Centre: AGD ($r\ =\ 0.848$); Right: AGD-SS
 
 **Distance matrix heatmaps for the S-Curve manifold.**
 Same protocol as Figure 5: $N\ =\ 300$, $\psi\ =\ 64$,
-$t\ =\ 200$ trees, single linkage. The geodesic distance is computed via $k$-NN graph
+t\ =\ 200$ trees, single linkage. The geodesic distance is computed via $k$-NN graph
 shortest paths ($k\ =\ 10$). Matrices are sorted by the first intrinsic coordinate. Left: ground-truth geodesic distance; Centre: AGD ($r\ =\ 0.716$); Right: AGD-SS
 ($r\ =\ 0.821$).
 
@@ -126,7 +126,7 @@ On **H<sup>2</sup>**, AGD-SS outperforms AGD consistently over different number 
 
 **Caption**
 
-**Distance matrix heatmaps for Poincaré Disk (H<sup>2</sup>).
+**Distance matrix heatmaps for Poincaré Disk (H<sup>2</sup>).**
 $300\ \times\ 300$ pairwise distance matrices ($\psi\ =\ 64$, $t\ =\ 200$, single
 linkage), sorted by angular position and normalised to $[0,1]$.
 Left: **exact hyperbolic geodesic**; Centre: **AGD** ($r\ =\ 0.551$);
@@ -138,7 +138,7 @@ Right: **AGD-SS** ($r\ =\ 0.773$).
 
 **Caption**
 
-**Distance matrix heatmaps for Poincaré Ball (H<sup>3</sup>).
+**Distance matrix heatmaps for Poincaré Ball (H<sup>3</sup>).**
 $300\ \times\ 300$ pairwise distance matrices ($\psi\ =\ 64$, $t\ =\ 200$, single
 linkage), sorted by radial distance from the origin and normalised to $[0,1]$.
 Left: **exact hyperbolic geodesic**; Centre: **AGD** ($r\ =\ 0.464$);
@@ -213,18 +213,17 @@ $\mathrm{MG}_{ij} = \max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}$.
 All statistics below are averaged over the
 $\binom{N}{2}$ pairs.
 **Top row (Mean Pairwise CV):**
-$\overline{\mathrm{CV}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\mathrm{CV}_{ij}$,
+$\overline{\mathrm{CV}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\mathrm{CV}_{ij}$,
 the mean coefficient of variation as a function of the number of
 trees $t$.
 **Middle row (Mean Pairwise SD):**
-$\bar{\sigma}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\sigma_{ij}$,
+$\bar{\sigma}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\sigma_{ij}$,
 the mean raw standard deviation (unnormalised) across all pairs.
 **Bottom row (Mean Pairwise Max Gap):**
-$\overline{\mathrm{MG}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\mathrm{MG}_{ij}$,
+$\overline{\mathrm{MG}}(t) = \left(\binom{N}{2}\right)^{-1}\sum_{i \lt j}\mathrm{MG}_{ij}$,
 the mean of the per-pair range (maximum minus minimum) over $R$
 runs, measuring the worst-case single-run deviation for a typical
 pair.
-
 
 ## Figure 16 (fig:concentration)
 
