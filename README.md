@@ -210,26 +210,25 @@ points $i$ and $j$ in the $r$-th independent run
 ($r = 1,\dots,R$).  Define the per-pair mean
 $\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}$,
 standard deviation
-$\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}
-(\hat{d}_{ij}^{(r)} - \mu_{ij})^{2}}$,
+$\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}(\hat{d}_{ij}^{(r)} - \mu_{ij})^{2}}$,
 coefficient of variation
 $\mathrm{CV}_{ij} = \sigma_{ij}\,/\,\mu_{ij}$,
 and max gap
-$\text{MG}_{ij} = max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}$.
+$\mathrm{MG}_{ij} = \max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}$.
 All statistics below are averaged over the
 $\binom{N}{2}$ pairs.
 **Top row (Mean Pairwise CV):**
 $\overline{\mathrm{CV}}(t)
-= \binom{N}{2}^{-1}\sum_{i<j}\mathrm{CV}_{ij}$,
+= \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\mathrm{CV}_{ij}$,
 the mean coefficient of variation as a function of the number of
 trees $t$.
 **Middle row (Mean Pairwise SD):**
 $\bar{\sigma}(t)
-= \binom{N}{2}^{-1}\sum_{i<j}\sigma_{ij}$,
+= \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\sigma_{ij}$,
 the mean raw standard deviation (unnormalised) across all pairs.
 **Bottom row (Mean Pairwise Max Gap):**
 $\overline{\mathrm{MG}}(t)
-= \binom{N}{2}^{-1}\sum_{i<j}\mathrm{MG}_{ij}$,
+= \left(\binom{N}{2}\right)^{-1}\sum_{i<j}\mathrm{MG}_{ij}$,
 the mean of the per-pair range (maximum minus minimum) over $R$
 runs, measuring the worst-case single-run deviation for a typical
 pair.
