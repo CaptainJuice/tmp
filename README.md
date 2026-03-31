@@ -4,7 +4,7 @@ This Markdown mirrors the content of `tree_visualization_response.tex` and uses 
 
 ## Figure 1 (fig:dendrograms)
 
-![fig:dendrograms](markdown_figures/fig1b_dendrograms_combined.png)
+![fig:dendrograms](markdown figures/fig1b_dendrograms_combined.png)
 
 **Caption**
 
