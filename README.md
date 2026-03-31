@@ -128,7 +128,7 @@ On **H<sup>2</sup>**, AGD-SS outperforms AGD consistently over different number 
 **Distance matrix heatmaps for Poincaré Disk (H<sup>2</sup>).**
 $`300 \times 300`$ pairwise distance matrices ( $`\psi = 64`$, $`t = 200`$, single linkage), sorted by angular position and normalised to $`[0,1]`$.
 Left: **exact hyperbolic geodesic**; Centre: **AGD** ( $`r = 0.551`$ );
-Right: **AGD-SS** ( $`r = 0.773` ).
+Right: **AGD-SS** ( $`r = 0.773`$ ).
 
 ## Figure 11 (fig:am_heatmap_ball)
 
@@ -147,12 +147,12 @@ Right: **AGD-SS** ( $`r = 0.722` ).
 
 **Caption**
 
-**Geodesic Precision on the Poincaré Ball (H<sup>3</sup>) at $`k = 50, 100, 150, 200`**
+**Geodesic Precision on the Poincaré Ball (H<sup>3</sup>) at $`k = 50, 100, 150, 200`$**
 ( $`N = 1000`$, noise constant $`= 20`$ ).
 Here we use the same parameter setting as in the main paper (Figure 3).
 Each panel shows a different evaluation neighbourhood size $`k`$. **Diffusion ( $`m = 64`$ )** is the most noise-robust method when $`k \leq 100`$,
 but its performance collapses at higher noise levels and larger $`k`$ values.
-**AGD-SS** performs better when $`k`$ is larger ( $`k = 200`$ ).
+**AGD-SS** performs better when $`k$` is larger ( $`k = 200`$ ).
 GF performs poorly throughout ( $`\leq 0.47`$ ), confirming its
 difficulty with hyperbolic geometry.
 
@@ -162,7 +162,7 @@ difficulty with hyperbolic geometry.
 
 **Caption**
 
-**Pearson correlation with true geodesic distance on four manifolds** ( $`N = 1000`$, noise constant $`= 20`$, noise dims $`\in \{0,2,4,6,8,10\}` ).
+**Pearson correlation with true geodesic distance on four manifolds** ( $`N = 1000`$, noise constant $`= 20`$, noise dims $`\in \{0,2,4,6,8,10\}`$ ).
 In order to align with the same setting of Figure 3 in our main paper, for each point $`x_i`$ we identify its $`50`$th–$`150`$th nearest
 neighbours under the true geodesic (a set $`S_i`$ of $`101`$ points)
 and compute the Pearson $`r`$ between the estimated and true geodesic
@@ -179,7 +179,7 @@ step used by Isomap. In Sphere and Swiss Roll, AGD-SS outperforms other methods.
 **Caption**
 
 **Pointwise concentration of AGD and AGD-SS for a single pair of points** ( $`5`$ independent runs ).
-One pair $`(i,j)$` was randomly selected and held fixed across all runs.
+One pair $`(i,j)`$ was randomly selected and held fixed across all runs.
 **Top row:** mean estimated pairwise distance $`\pm`$ one standard deviation (shaded).
 **Bottom row:** standard deviation of the estimate across $`5`$ runs.
 
@@ -190,7 +190,7 @@ One pair $`(i,j)$` was randomly selected and held fixed across all runs.
 **Caption**
 
 **Pairwise concentration across all $`\binom{N}{2}`$ point pairs** ( $`N=300`$, $`\psi=64`$, single linkage, $`R=5`$ independent runs ).
-Let $`\hat{d}_{ij}^{(r)}`$ denote the estimated distance between points $`i`$ and $`j`$ in the $`r`$-th independent run ( $`r = 1,\dots,R`$ ). Define the per-pair mean $`\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}`$,
+Let $`\hat{d}_{ij}^{(r)}`$ denote the estimated distance between points $`i`$ and $`j`$ in the $`r`-th independent run ( $`r = 1,\dots,R` ). Define the per-pair mean $`\mu_{ij} = \frac{1}{R}\sum_{r=1}^{R}\hat{d}_{ij}^{(r)}`$,
 standard deviation $`\sigma_{ij} = \sqrt{\frac{1}{R-1}\sum_{r=1}^{R}(\hat{d}_{ij}^{(r)}-\mu_{ij})^{2}}`$,
 coefficient of variation $`\mathrm{CV}_{ij} = \sigma_{ij}\,/\,\mu_{ij}`$,
 and max gap $`\mathrm{MG}_{ij} = \max_{r}\hat{d}_{ij}^{(r)}-\min_{r}\hat{d}_{ij}^{(r)}`$.
